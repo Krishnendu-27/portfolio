@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      maximum-scale="1.0,"
+      user-scalable="no"
+    />
+    <title>portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./aseests/css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="nav_container">
+        <div id="nav_left">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">GHOSH </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav_right">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">About Me </a>
+            </li>
+            <li class="nav_item">
+              <a href="#projects" class="nav_link">projects</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Add this button inside your nav_container -->
+        <button id="mobileMenuButton" class="mobile-menu-btn">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main class="main" id="home">
+      <div class="first_section">
+        <div class="first_section-left">
+          <div>
+            Hi! I'm <span id="krishnendu">Krishnendu</span>, a BCA student with
+            a strong passion for programming and technology.
+          </div>
+          <div id="element"></div>
+        </div>
+        <div class="first_section-right">
+          <!-- your image -->
+          <img src="./aseests/images/myimage.png" alt="" id="face_iamge" />
+        </div>
+      </div>
+    </main>
+    <hr />
+    <div class="secoend_section" id="about">
+      <div class="secoend_section_left">
+        I am a passionate web developer currently pursuing a Bachelor of
+        Computer Applications (BCA) at Eminent College of Management &
+        Technology. With a strong interest in building dynamic and user-friendly
+        websites, I specialize in the MERN stack (MongoDB, Express.js, React.js,
+        and Node.js).
+        <br />
+        In addition to my work with the MERN stack, I am actively learning
+        Python to deepen my understanding of backend development and expand my
+        programming skill set. I enjoy solving real-world problems through code
+        and continuously strive to improve my development skills.
+      </div>
+      <div class="secoend_section_right">
+        <a href="resume.pdf" download="krishnendu_curricullam_vite.pdf"
+          ><button class="cV">Downlode CV</button></a
+        >
+      </div>
+    </div>
+    <hr />
+    <div class="third_section" id="projects">
+      <div class="project1">
+        <a href="#"
+          ><img
+            src="./aseests/images/image1.png"
+            alt="tic tac too"
+            id="#tic_tac_too"
+        /></a>
+      </div>
+      <div class="project2">
+        <a href="#"
+          ><img
+            src="./aseests/images/1.png"
+            alt="keybord_checker"
+            id="keybord_checker"
+        /></a>
+      </div>
+      <div class="project3">
+        <a href="#"
+          ><img
+            src="/aseests/images/cloud_coudy_day_fog_mist_icon.png"
+            alt="wether_forcasting"
+            id="wether_forcasting"
+        /></a>
+      </div>
+    </div>
+    <div class="forth_section" id="contact">
+      <div class="forth_section_left">
+        <span class="social handles">lets conect</span>
+        <a href="#">
+          <img src="./aseests/images/fackbbok.png" alt="fackbook handle"
+        /></a>
+        <a href="#">
+          <img src="./aseests/images/twiter.png" alt="twiter handle"
+        /></a>
+        <a href="https://www.linkedin.com/in/krishnendu-ghosh-884000366/">
+          <img src="./aseests/images/linkdin.png" alt="linkdin handle"
+        /></a>
+        <a href="https://github.com/krishnendu-G0">
+          <img src="./aseests/images/github.png" alt="linkdin handle"
+        /></a>
+      </div>
+      <div class="forth_section_right">
+        <form action="">
+          <label for="name">Enter your first name </label>
+          <input type="text" required name="" />
+          <label for="name">Enter your last name </label>
+          <input type="text" required name="" />
+          <label for="">Enter your email address</label>
+          <input type="email" required name="" />
+          <button type="submit" class="cV">submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./aseests/js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "I am a Web Developer",
+          "I am a UI/UX Designer",
+          "I am a App Developer",
+          "I am a Tech Enthusiast",
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true,
+        showCursor: false,
+      });
+    </script>
+  </body>
+</html>
